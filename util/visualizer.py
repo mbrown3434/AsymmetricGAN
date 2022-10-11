@@ -4,8 +4,7 @@ import ntpath
 import time
 from . import util
 from . import html
-from scipy.misc import imresize
-
+from skimage.transform import resize
 
 # save image to the disk
 def save_images(webpage, visuals, image_path, aspect_ratio=1.0, width=256):
